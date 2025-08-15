@@ -4,11 +4,12 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-## ✅ Week 1: Getting Started
-- Set up GitHub repo `lighthouse-python-essentials`
-- Created folder structure: `lessons/`, `projects/`
-- Added `.gitignore` and `README.md`
-- ✅ Ready to begin **Everyday Python**
+## 🗓 Session 0: Course Enrollment & Setup
+- Signed up for **Programming Essentials with Python** (Lighthouse Labs)
+- Reviewed syllabus and lesson structure
+- Prepared `progress.md` for tracking
+- Ready to begin Lesson 1 on next study day
+
 
 ---
 
