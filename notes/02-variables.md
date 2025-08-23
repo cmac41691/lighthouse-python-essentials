@@ -28,3 +28,20 @@ print(f"Hello, {name}. Your total is {total}.")
 ## Tricky parts to revisit
  -f strings vs concatenation
  - Float rounding (e.g., round(total, 2))
+
+
+# 📝 Variables
+
+## Key Ideas
+- Variables store values (strings, numbers, etc.) so we can reuse them later.
+- They act like *labels* attached to values in memory.
+- `#` is used for **comments** → these explain code but don’t run.
+
+## Example (basic travel/tax calculation)
+```python
+name = "Thomas"              # variable = string
+tax_rate = 0.14              # variable = number (float)
+subtotal = 20                # variable = number (int)
+tax = subtotal * tax_rate    # multiply subtotal by tax
+total = subtotal + tax       # add tax to subtotal
+print(f"Hello, {name}. Your total is {total}.")
