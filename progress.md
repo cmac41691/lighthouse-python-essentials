@@ -27,9 +27,13 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 ## 🧠 Reflections
-_Leave thoughts here after finishing the course._
+## 🌸 Reflections
+- **Date**: 2025-08-29  
+- **This week / day**: Even though Thursday started lighter, I put in extra work Thursday + Friday to keep pace.  
+- **Progress**: Steps 1–2 now in place (flight validation + hotels with budget filter).  
+- **Challenges**: Need to refine the `for` loop logic for comparing hotel costs with available resources.  
+- **Next step**: Tackle Step 3 on Saturday (subtotal + tax calculation).
 
----
 
 ## 🛠 Future Plans
 - Convert project into a standalone app or script
