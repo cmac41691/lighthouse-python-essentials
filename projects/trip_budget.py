@@ -29,7 +29,7 @@ for inn in inns:
 
 # Step 3: Placeholder subtotal & tax
 subtotal = 0
-# subtotal = flight_cost + hotel_cost + food_cost
+# subtotal = flight_cost + inn_cost + food_cost
 # total = subtotal + (subtotal * tax_rate)
 
 tax_rate = 0.14   # placeholder
