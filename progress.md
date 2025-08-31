@@ -26,13 +26,20 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-## 🧠 Reflections
+
 ## 🌸 Reflections
-- **Date**: 2025-08-29  
-- **This week / day**: Even though Thursday started lighter, I put in extra work Thursday + Friday to keep pace.  
-- **Progress**: Steps 1–2 now in place (flight validation + hotels with budget filter).  
-- **Challenges**: Need to refine the `for` loop logic for comparing hotel costs with available resources.  
-- **Next step**: Tackle Step 3 on Saturday (subtotal + tax calculation).
+## 🌸 Reflections  
+
+**Date**: 2025-08-31  
+
+**This week / day**: Pushed forward on Steps 1–2 by adding flight validation and a hotel budget filter, then moved into Step 3 by setting up food cost and subtotal placeholders. Practiced building out logic piece by piece while keeping things clear and simple.  
+
+**Progress**: Prototype now accepts flight input, validates hotel budget against available options, and sets up subtotal/tax placeholders. Added food cost as float input to prepare for full subtotal calculations.  
+
+**Challenges**: Need to tighten subtotal logic so it includes hotel + food cost cleanly. Also figuring out how to connect dictionary values (inn cost) with user resources without making it too advanced.  
+
+**Next step**: Work on Step 3 fully (subtotal + tax calculation). Focus on keeping it beginner-friendly: combine flight, hotel, and food costs into subtotal, then add tax.  
+
 
 
 ## 🛠 Future Plans
