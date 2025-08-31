@@ -1,14 +1,12 @@
-# Trip Budget Calculator (prototype)
+# Trip Budget Calculator (barebones prototype)
 
 # Step 1: Collect user input
 name = input("Enter your name: ")
-
-flight_cost = float(input("Please put in the cost:"))
+flight_cost = float(input("Enter flight cost: "))
 while flight_cost > 1000:
-    print("That's too much, please try again.")
-    flight_cost = float(input("Put in the cost:"))
-
-print("Excellent! your flight is booked under $1000")
+    print("Too expensive, try again.")
+    flight_cost = float(input("Enter flight cost: "))
+print("Flight accepted under $1000")
 
 # Step 2: Hotels stored as list of dictionaries
 inns = [
@@ -17,22 +15,24 @@ inns = [
     {"hotel": "Fairmont", "cost": 150}
 ]
 
-# Loop (work in progress)
-resources = 200
+resources = float(input("Enter your hotel budget: "))
+while resources <= 0:
+    print("Budget must be positive, try again.")
+    resources = float(input("Enter your hotel budget: "))
 
+# Loop through hotels (basic filter)
 for inn in inns:
     if inn["cost"] <= resources:
         print(f"{inn['hotel']} - ${inn['cost']} [OK]")
     else:
         print(f"{inn['hotel']} - ${inn['cost']} [Too expensive]")
 
-
-# Step 3: Placeholder subtotal & tax
-subtotal = 0
-# subtotal = flight_cost + inn_cost + food_cost
+# Step 3: Subtotal and tax placeholder
+food_cost = float(input("Enter your food budget: "))
+subtotal = flight_cost + food_cost   # hotel cost not added yet
+tax_rate = 0.14
 # total = subtotal + (subtotal * tax_rate)
 
-tax_rate = 0.14   # placeholder
-
-# Step 4: Print result
+# Step 4: Print result (placeholder)
 # print(f"Hello {name}, your trip will cost ${total:.2f}")
+
