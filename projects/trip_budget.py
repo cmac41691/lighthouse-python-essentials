@@ -15,14 +15,17 @@ inns = [
     {"hotel": "Fairmont", "cost": 150}
 ]
 
-resources = float(input("Enter your hotel budget: "))
-while resources <= 0:
+hotel_pick = None
+hotel_price = None
+
+hotel_budget = float(input("Enter your hotel budget: "))
+while hotel_budget <= 0:
     print("Budget must be positive, try again.")
-    resources = float(input("Enter your hotel budget: "))
+    hotel_budget = float(input("Enter your hotel budget: "))
 
 # Loop through hotels (basic filter)
 for inn in inns:
-    if inn["cost"] <= resources:
+    if inn["cost"] <= hotel_budget:
         print(f"{inn['hotel']} - ${inn['cost']} [OK]")
     else:
         print(f"{inn['hotel']} - ${inn['cost']} [Too expensive]")
