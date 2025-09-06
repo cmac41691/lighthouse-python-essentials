@@ -27,18 +27,13 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 🌸 Reflections  
+## 🌸 Reflections
 
-**Date**: 2025-09-03  
-
-**This week / day**: Refactored Step 2 to replace the placeholder `mock_dict` with the real `inns` dataset. Kept my loop and comparison logic intact but upgraded it to work with actual hotel names and costs.  
-
-**Progress**: Program now prints which hotels are affordable using the real list of dictionaries. Added `affordable_hotels` as a foundation for carrying forward hotel data into Step 3. Flight validation and hotel budget validation loops remain in place.  
-
-**Challenges**: Making sure I translated my prototype logic into real data without breaking the barebones flow. Had to check how indices vs. dictionaries worked when storing results.  
-
-**Next step**: For Friday, start Step 4 — add a chosen hotel’s cost into the subtotal, calculate total with tax, and print a clean summary for the user.  
-
+**Date**: 2025-09-06  
+**Progress**: Completed Steps 1–4 of the Trip Budget prototype. Added working input validation for flight and hotel, included food cost, calculated subtotal/tax, and generated a clean trip summary output.  
+**Challenges**: Debugging variable references (hotel_price vs. affordable hotel loop) and ensuring totals included all parts correctly. Fixed issues with undefined variables by restructuring logic.  
+**Next step**: Polish the project (better user experience, maybe handle multiple hotel picks) and start preparing for the next Lighthouse Labs lesson/chapter.
+ 
 
 
 ## 🛠 Future Plans
