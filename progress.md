@@ -16,7 +16,7 @@ This file documents my progress through the **Programming Essentials with Python
 ## 📆 Everyday Python
 > (Mark each one complete when done ✅)
 
-- [ ] Lesson 1: Your First Lines of Python  
+- [✅] Lesson 1: Your First Lines of Python  
 - [ ] Lesson 2: Working with Variables  
 - [ ] Lesson 3: Strings and Input  
 - [ ] Lesson 4: Decisions and Conditions  
@@ -28,11 +28,16 @@ This file documents my progress through the **Programming Essentials with Python
 
 
 ## 🌸 Reflections
-
 **Date**: 2025-09-06  
-**Progress**: Completed Steps 1–4 of the Trip Budget prototype. Added working input validation for flight and hotel, included food cost, calculated subtotal/tax, and generated a clean trip summary output.  
-**Challenges**: Debugging variable references (hotel_price vs. affordable hotel loop) and ensuring totals included all parts correctly. Fixed issues with undefined variables by restructuring logic.  
-**Next step**: Polish the project (better user experience, maybe handle multiple hotel picks) and start preparing for the next Lighthouse Labs lesson/chapter.
+
+**This week / day**: Finished Step 4 (Trip Summary printing). Successfully tested in terminal, showing correct subtotal, tax, and total outputs.  
+
+**Progress**: Completed prototype Steps 1–4 (flight validation, hotel budget filter, food cost input, and full trip summary with totals). Chapter 1 now considered done.  
+
+**Challenges**: Had to debug subtotal/total logic and adjust variable naming for consistency. Worked through input validation and printing formatting issues.  
+
+**Next step**: Move into Chapter 2 – start applying what I learned to new exercises/projects.  
+
  
 
 
