@@ -28,15 +28,19 @@ This file documents my progress through the **Programming Essentials with Python
 
 
 ## 🌸 Reflections
-**Date**: 2025-09-06  
+**Date**: 2025-09-07
 
-**This week / day**: Finished Step 4 (Trip Summary printing). Successfully tested in terminal, showing correct subtotal, tax, and total outputs.  
+**This week / day**: Started Chapter 2 (Strings). Created prototype files for 
+introduction to strings, multi-line strings, string operations, and string replacement exercise.
 
-**Progress**: Completed prototype Steps 1–4 (flight validation, hotel budget filter, food cost input, and full trip summary with totals). Chapter 1 now considered done.  
+**Progress**: Set up new `chapter2/` folder under `projects/` and added empty Python 
+files as placeholders. Ready to begin practicing with string basics and manipulations.
 
-**Challenges**: Had to debug subtotal/total logic and adjust variable naming for consistency. Worked through input validation and printing formatting issues.  
+**Challenges**: None so far — just focusing on organizing files and keeping the 
+workflow consistent.
 
-**Next step**: Move into Chapter 2 – start applying what I learned to new exercises/projects.  
+**Next step**: Begin filling in code examples for each file (starting with 
+`introduction_to_strings.py`) and test them in the terminal.
 
  
 
