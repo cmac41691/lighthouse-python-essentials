@@ -28,19 +28,20 @@ This file documents my progress through the **Programming Essentials with Python
 
 
 ## 🌸 Reflections
-**Date**: 2025-09-07
+**Date**: 2025-09-08
 
-**This week / day**: Started Chapter 2 (Strings). Created prototype files for 
-introduction to strings, multi-line strings, string operations, and string replacement exercise.
+**This week / day**: Expanded Chapter 2 work by filling in starter code for 
+all string lesson files and created new notes file `03-strings.md`.
 
-**Progress**: Set up new `chapter2/` folder under `projects/` and added empty Python 
-files as placeholders. Ready to begin practicing with string basics and manipulations.
+**Progress**: Successfully tested examples for introduction, multi-line strings, 
+operations (indexing, slicing, case changes), and replacement. Notes now include 
+concepts, examples, and expected outputs.
 
-**Challenges**: None so far — just focusing on organizing files and keeping the 
-workflow consistent.
+**Challenges**: Needed to make sure notes matched the code outputs 
+to avoid confusion later. Resolved by running all files and documenting results.
 
-**Next step**: Begin filling in code examples for each file (starting with 
-`introduction_to_strings.py`) and test them in the terminal.
+**Next step**: Continue practicing with the Chapter 2 exercises and update notes 
+with any new insights as I progress.
 
  
 
