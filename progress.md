@@ -27,21 +27,22 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 🌸 Reflections
-**Date**: 2025-09-08
+**Date**: 2025-09-13
 
-**This week / day**: Expanded Chapter 2 work by filling in starter code for 
-all string lesson files and created new notes file `03-strings.md`.
+**This week / day**: Completed the Chapter 2 exercise on String Replacement. 
+Copied the provided lyrics, applied the `.replace()` method to fix incorrect words, 
+and confirmed the corrected version printed in the terminal.
 
-**Progress**: Successfully tested examples for introduction, multi-line strings, 
-operations (indexing, slicing, case changes), and replacement. Notes now include 
-concepts, examples, and expected outputs.
+**Progress**: Learned how to use `.replace(old, new)` to transform text. 
+Successfully chained multiple replacements to clean up the broken lyrics. 
+Both the original and fixed versions were displayed for clarity.
 
-**Challenges**: Needed to make sure notes matched the code outputs 
-to avoid confusion later. Resolved by running all files and documenting results.
+**Challenges**: Needed to carefully check each incorrect word before replacing 
+to avoid missing one. Realized how important precision is when manipulating strings.
 
-**Next step**: Continue practicing with the Chapter 2 exercises and update notes 
-with any new insights as I progress.
+**Next step**: Move forward to the next section of Chapter 2 while continuing 
+to update notes with examples and outputs. 
+
 
  
 
