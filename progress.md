@@ -27,21 +27,12 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-**Date**: 2025-09-13
+**Date**: 2025-09-14  
+**This week / day**: Scaffolded Chapter 3 (Numbers) by creating a new directory and starter files.  
+**Progress**: Organized four files to match the upcoming lessons and exercises. Repo structure remains clean and consistent.  
+**Challenges**: Decided to keep everything on the `main` branch for simplicity rather than branching.  
+**Next step**: Begin working through "Introduction to Numbers" and update notes in `04-numbers.md`.  
 
-**This week / day**: Completed the Chapter 2 exercise on String Replacement. 
-Copied the provided lyrics, applied the `.replace()` method to fix incorrect words, 
-and confirmed the corrected version printed in the terminal.
-
-**Progress**: Learned how to use `.replace(old, new)` to transform text. 
-Successfully chained multiple replacements to clean up the broken lyrics. 
-Both the original and fixed versions were displayed for clarity.
-
-**Challenges**: Needed to carefully check each incorrect word before replacing 
-to avoid missing one. Realized how important precision is when manipulating strings.
-
-**Next step**: Move forward to the next section of Chapter 2 while continuing 
-to update notes with examples and outputs. 
 
 
  
