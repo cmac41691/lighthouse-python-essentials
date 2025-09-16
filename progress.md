@@ -27,12 +27,19 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-**Date**: 2025-09-14  
-**This week / day**: Scaffolded Chapter 3 (Numbers) by creating a new directory and starter files.  
-**Progress**: Organized four files to match the upcoming lessons and exercises. Repo structure remains clean and consistent.  
-**Challenges**: Decided to keep everything on the `main` branch for simplicity rather than branching.  
-**Next step**: Begin working through "Introduction to Numbers" and update notes in `04-numbers.md`.  
+**Date**: 2025-09-16  
 
+**This week / day**: Began Chapter 3 by creating `04-numbers.md` and adding detailed notes from the "Introduction to Numbers" lesson.  
+
+**Progress**:  
+- Learned how numbers differ from strings (cannot use `len()` or string concatenation).  
+- Practiced basic operations: `2 + 2` vs `"2" + "2"`.  
+- Understood difference between `int` and `float`.  
+- Explored type conversion using `float()` and `int()` (decimal truncation).  
+
+**Challenges**: Needed to carefully track where errors came from when mixing strings and numbers.  
+
+**Next step**: Move on to the "Math in Python" lesson and expand notes in `04-numbers.md`.  
 
 
  
