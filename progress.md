@@ -17,7 +17,7 @@ This file documents my progress through the **Programming Essentials with Python
 > (Mark each one complete when done ✅)
 
 - [✅] Lesson 1: Your First Lines of Python  
-- [ ] Lesson 2: Working with Variables  
+- [✅] Lesson 2: Working with Variables  
 - [ ] Lesson 3: Strings and Input  
 - [ ] Lesson 4: Decisions and Conditions  
 - [ ] Lesson 5: Loops and Repetition  
@@ -27,19 +27,12 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-**Date**: 2025-09-16  
-
-**This week / day**: Began Chapter 3 by creating `04-numbers.md` and adding detailed notes from the "Introduction to Numbers" lesson.  
-
-**Progress**:  
-- Learned how numbers differ from strings (cannot use `len()` or string concatenation).  
-- Practiced basic operations: `2 + 2` vs `"2" + "2"`.  
-- Understood difference between `int` and `float`.  
-- Explored type conversion using `float()` and `int()` (decimal truncation).  
-
-**Challenges**: Needed to carefully track where errors came from when mixing strings and numbers.  
-
-**Next step**: Move on to the "Math in Python" lesson and expand notes in `04-numbers.md`.  
+### 2025-09-21  
+- Started work on **Exercise: Tax Calculator**.  
+- Implemented user input handling using `float(input())`.  
+- Added calculation for tax (13%) and total amount.  
+- Practiced clear variable naming (`user_amount`, `tax_amount`, `tax_amount_total`).  
+- Next: refine printing with f-strings and improve user experience.  
 
 
  
