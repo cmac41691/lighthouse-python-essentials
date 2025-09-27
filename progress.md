@@ -27,12 +27,11 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-### 2025-09-21  
-- Started work on **Exercise: Tax Calculator**.  
-- Implemented user input handling using `float(input())`.  
-- Added calculation for tax (13%) and total amount.  
-- Practiced clear variable naming (`user_amount`, `tax_amount`, `tax_amount_total`).  
-- Next: refine printing with f-strings and improve user experience.  
+## 2025-09-27 Progress
+- Completed the Tax Calculator exercise.
+- Implemented input validation with try/except.
+- Calculated tax at 13% and displayed total including tax.
+- Added formatted output (rounded to 2 decimal places).
 
 
  
