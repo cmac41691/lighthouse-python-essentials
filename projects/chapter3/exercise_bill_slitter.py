@@ -19,3 +19,18 @@
 # If bill = 100 and 4 people, each should pay 25.00
 
 # Write your code below:
+# Step 1: Ask the user for the total bill
+users_bill = input("Enter the bill total: ")
+try:
+    total_bill = float(users_bill)
+    print("Entered number as float:", total_bill)
+except ValueError:
+    print("Invalid input. Please enter a valid bill amount.")
+
+# Step 2: Ask how many people are splitting the bill
+total_people = input("Enter the number of people: ")
+try:
+    people_split = int(total_people)
+    print("Entered number of people:", people_split)
+except ValueError:
+    print("Invalid input. Please enter a whole number.")

@@ -27,11 +27,11 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-09-27 Progress
-- Completed the Tax Calculator exercise.
-- Implemented input validation with try/except.
-- Calculated tax at 13% and displayed total including tax.
-- Added formatted output (rounded to 2 decimal places).
+## 2025-09-28 Progress
+- Started Bill Splitter exercise
+- Added input handling for bill total (float) and number of people (int)
+- Used try/except for error handling to ensure valid inputs
+
 
 
  
