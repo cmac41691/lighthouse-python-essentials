@@ -34,3 +34,10 @@ try:
     print("Entered number of people:", people_split)
 except ValueError:
     print("Invalid input. Please enter a whole number.")
+
+#Step 3: Divide the total bill by the number of people.
+amount_per_person = total_bill/people_split
+print(amount_per_person)
+
+tip_amount = total_bill * 0.13
+print(tip_amount)

@@ -27,10 +27,12 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-09-28 Progress
-- Started Bill Splitter exercise
-- Added input handling for bill total (float) and number of people (int)
-- Used try/except for error handling to ensure valid inputs
+## 2025-09-29 Progress
+- Completed Step 3 of Bill Splitter
+- Implemented bill splitting per person
+- Added tip calculation (13%)
+- Fixed earlier traceback and validated correct output
+
 
 
 
