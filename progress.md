@@ -28,11 +28,11 @@ This file documents my progress through the **Programming Essentials with Python
 
 
 ## 2025-10-01 Progress
-- Completed Step 3 of Bill Splitter
+- Completed Bill Splitter
 - Implemented bill splitting per person
-- Added tip calculation (13%)
 - Fixed earlier traceback and validated correct output
-
+- added formatted summary output
+- included bill total and tip (13%)
 
 
 
