@@ -27,12 +27,11 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-01 Progress
-- Completed Bill Splitter
-- Implemented bill splitting per person
-- Fixed earlier traceback and validated correct output
-- added formatted summary output
-- included bill total and tip (13%)
+## 2025-10-02 Progress
+- Created new milestone project: Word Game
+- Added project scaffolding (README.md + word_game.py with step-by-step plan)
+- Prepared structure for future implementation
+
 
 
 
@@ -40,6 +39,6 @@ This file documents my progress through the **Programming Essentials with Python
 
 
 ## 🛠 Future Plans
-- Convert project into a standalone app or script
-- Explore intermediate Python or data projects
-
+- Implement core game loop (word guessing logic)
+- Add win/lose conditions and attempt counter
+- Polish output formatting for better user experience
