@@ -28,11 +28,10 @@ This file documents my progress through the **Programming Essentials with Python
 
 
 ## 2025-10-04 Progress
-- Created scaffolding for the Word Game milestone project
-- Added draft structure for mad_libs.py (user input + story template)
-- Added draft structure for hangman.py (word guessing logic)
-- Updated word_game.py with blueprint notes to combine Mad Libs and Hangman
-- Organized project files and prepared for development
+- Created scaffolding for Mad Libs and Hangman projects
+- Implemented Steps 1–3 of Mad Libs (user inputs + f-string story template)
+- Committed working version for testing
+- Plan: Start Step 4 (final story output + polish) tomorrow
 
 ## Next Steps
 - Start implementing Mad Libs (Step 1: story template with blanks, Step 2: user inputs)
