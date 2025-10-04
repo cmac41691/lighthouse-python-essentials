@@ -4,6 +4,13 @@
 # The program should choose a secret word, then let the user guess letters
 # until they either guess the whole word or run out of attempts.
 
+# Word Game (Final Project)
+# ------------------
+# This project combines Mad Libs and Hangman ideas.
+# - User can pick a mode: play Mad Libs or Hangman
+# - Program runs the selected game
+
+
 # Step 1: Choose a secret word
 # 👉 Google: "python random choice from list"
 # Example: words = ["python", "lighthouse", "code"]

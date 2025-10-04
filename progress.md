@@ -27,18 +27,13 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-02 Progress
-- Created new milestone project: Word Game
-- Added project scaffolding (README.md + word_game.py with step-by-step plan)
-- Prepared structure for future implementation
+## 2025-10-04 Progress
+- Created scaffolding for the Word Game milestone project
+- Added draft structure for mad_libs.py (user input + story template)
+- Added draft structure for hangman.py (word guessing logic)
+- Updated word_game.py with blueprint notes to combine Mad Libs and Hangman
+- Organized project files and prepared for development
 
-
-
-
- 
-
-
-## 🛠 Future Plans
-- Implement core game loop (word guessing logic)
-- Add win/lose conditions and attempt counter
-- Polish output formatting for better user experience
+## Next Steps
+- Start implementing Mad Libs (Step 1: story template with blanks, Step 2: user inputs)
+- Test basic functionality and refine output formatting
