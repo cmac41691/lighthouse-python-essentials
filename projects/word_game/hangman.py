@@ -32,3 +32,17 @@
 # 👉 Google: "python while loop break conditions"
 # - Win if all letters guessed
 # - Lose if attempts run out
+# --- Step 1: choose a secret word ---
+import random
+
+secret_words = ["python", "lighthouse", "adventure", "journey", "code"]
+secret_word = random.choice(secret_words)
+
+# --- Step 2: initialize game state ---
+hidden = ["_"] * len(secret_word)   # underscores per letter
+attempts_left = 6                    # classic hangman tries
+guessed = set()                      # what the player has tried
+
+# (optional while debugging)
+# print(secret_word)
+# print(" ".join(hidden))

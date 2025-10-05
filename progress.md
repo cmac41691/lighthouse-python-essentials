@@ -27,11 +27,12 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-04 Progress
-- Created scaffolding for Mad Libs and Hangman projects
-- Implemented Steps 1–3 of Mad Libs (user inputs + f-string story template)
-- Committed working version for testing
-- Plan: Start Step 4 (final story output + polish) tomorrow
+## 2025-10-05 Progress
+- Added hangman.py file
+- Completed Steps 1–2 (word selection + initial game setup)
+- Prepared variables for hidden word, attempts, and guessed letters
+- Plan: begin Step 3 (user input and validation loop) on Monday
+
 
 ## Next Steps
 - Start implementing Mad Libs (Step 1: story template with blanks, Step 2: user inputs)
