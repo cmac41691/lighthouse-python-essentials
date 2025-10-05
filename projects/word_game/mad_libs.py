@@ -33,4 +33,6 @@ a world of exploration awaits you!
 """
 
 # Step 4: Print the completed story
+print("/n=== Hero's Tale Start ===/n")
 print(hero_journey)
+print("=== THE END ===")
