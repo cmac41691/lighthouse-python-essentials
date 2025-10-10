@@ -27,11 +27,13 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-05 Progress
-- Added hangman.py file
-- Completed Steps 1–2 (word selection + initial game setup)
-- Prepared variables for hidden word, attempts, and guessed letters
-- Plan: begin Step 3 (user input and validation loop) on Monday
+## 2025-10-09 Progress
+- Completed and tested Hangman while loop logic
+- Added user input handling with .lower() and .strip()
+- Built working if/else structure for right and wrong guesses
+- Major milestone: first interactive game loop successfully running
+- Next: update 'hidden' list to reveal correct letters and polish output
+
 
 
 ## Next Steps

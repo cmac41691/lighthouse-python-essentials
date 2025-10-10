@@ -46,3 +46,15 @@ guessed = set()                      # what the player has tried
 # (optional while debugging)
 # print(secret_word)
 # print(" ".join(hidden))
+
+# ---  Step 3: Ask user for a guess ---
+while attempts_left > 0 and "_" in hidden:
+    ask_user = input("Please put in a letter:").lower().strip()
+    if ask_user in secret_word:
+        secret_word += 1
+        print("Nice job on the right letter")
+    if guessed not in secret_word:
+        attempts_left -= 6
+        print("Oops, wrong guess try again!")
+print("Try another letter" + secret_word)
+
