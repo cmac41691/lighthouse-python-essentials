@@ -58,3 +58,36 @@ while attempts_left > 0 and "_" in hidden:
         print("Oops, wrong guess try again!")
 print("Try another letter" + secret_word)
 
+
+# --- Step 4: show state + handle a guess each turn ---
+while attempts_left > 0 and "_" in hidden:
+    # Display current game state
+    print("\n--- Current State ---")
+    print("Word so far: " + " ".join(hidden))
+    print(f"Attempts left: {attempts_left}")
+
+    # Ask user for a letter
+    ask_user = input("Please put in a letter: ").lower().strip()
+
+    # Basic validation (optional but helpful)
+    if len(ask_user) != 1 or not ask_user.isalpha():
+        print("Please enter a single letter (a–z).")
+        continue
+
+    # Right vs wrong guess
+    if ask_user in secret_word:
+        print("Nice job on the right letter!")
+        # Reveal all matching positions in `hidden`
+        for i, ch in enumerate(secret_word):
+            if ch == ask_user:
+                hidden[i] = ask_user
+    else:
+        attempts_left -= 1
+        print("Oops, wrong guess — keep trying!")
+
+# Game loop ends
+if "_" not in hidden:
+    print(f"\nYou got it! The word was: {secret_word}")
+else:
+    print(f"\nI'm sorry, you ran out of attempts. The word was: {secret_word}")
+

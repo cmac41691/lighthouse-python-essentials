@@ -27,13 +27,11 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-09 Progress
-- Completed and tested Hangman while loop logic
-- Added user input handling with .lower() and .strip()
-- Built working if/else structure for right and wrong guesses
-- Major milestone: first interactive game loop successfully running
-- Next: update 'hidden' list to reveal correct letters and polish output
-
+## 2025-10-12 Hangman Progress
+- Implemented Step 4: game state display and user feedback loop.
+- Added live word progress, attempt tracking, and correct/incorrect guess handling.
+- Debugged and refined logic for smoother gameplay flow.
+- Next: finalize code polish and begin testing the full game loop for consistency.
 
 
 ## Next Steps
