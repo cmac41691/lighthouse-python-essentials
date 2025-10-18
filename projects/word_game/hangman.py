@@ -20,8 +20,7 @@ while attempts_left > 0 and "_" in hidden:
     print("\n--- Current State ---")
     print("Word so far:", " ".join(hidden))
     print(f"Attempts left: {attempts_left}")
-    if guessed:
-        print("Tried:", ", ".join(sorted(guessed)))
+    print("Tried:", ", ".join(sorted(guessed)) if guessed else "-")
 
     # Ask user for a letter
     ask_user = input("Please put in a letter: ").lower().strip()
@@ -35,7 +34,6 @@ while attempts_left > 0 and "_" in hidden:
     if ask_user in guessed:
         print(f"You already tried '{ask_user}'.")
         continue
-    guessed.add(ask_user)
 
     # Apply guess
     if ask_user in secret_word:
@@ -47,8 +45,12 @@ while attempts_left > 0 and "_" in hidden:
         attempts_left -= 1
         print("Oops, wrong guess — keep trying!")
 
+    # Record this new guess
+    guessed.add(ask_user)
+
 # --- End of game ---
+print("\nFinal word:", " ".join(hidden))
 if "_" not in hidden:
-    print(f"\nYou got it! The word was: {secret_word}")
+    print(f"You got it! The word was: {secret_word}")
 else:
-    print(f"\nI'm sorry, you ran out of attempts. The word was: {secret_word}")
+    print(f"I'm sorry, you ran out of attempts. The word was: {secret_word}")

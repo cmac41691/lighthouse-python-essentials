@@ -27,12 +27,28 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-13  Progress Log
-- Completed: Integrated and refactored full Hangman game loop.
-- Fixed: Infinite loop bug and incorrect attempt counter logic.
-- Added: Input validation, guessed-letter tracking, and improved feedback messages.
-- Next: Begin structured testing phase to confirm correct letter updates, attempt limits, and game end conditions.
+## 2025-10-18 — Hangman v1.0 Milestone
 
+Progress Summary:
 
-## Next Steps
+- Completed and finalized the Hangman project under word_game/.
+- Implemented full gameplay loop:
+- Displays word progress, attempts remaining, and guessed letters.
+- Handles valid input, duplicate guesses, and incorrect attempts properly.
+- Ends with clear win/loss messages and reveals the full word.
+- Cleaned up redundant lines and improved readability with formatted output.
+- Added final word display and consistent user feedback for every turn.
+
+Testing:
+
+- Verified multiple rounds — correct letters reveal properly.
+- Wrong guesses decrement attempts accurately.
+- Game ends cleanly with correct or failure state.
+- No input or crash errors during runtime.
+
+## Next Steps:
+
+Begin planning Mad Libs → Hangman integration into word_game.py.
+
+Optional polish: color output or difficulty selector (easy/medium/hard)
 
