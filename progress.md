@@ -27,17 +27,10 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-## 2025-10-18 — Hangman v1.0 Milestone
+### 2025-10-19  
+- Added Step 1 pseudocode for Word Game (menu + game mode logic)  
+- Preparing to start Mad Libs logic next  
 
-Progress Summary:
-
-- Completed and finalized the Hangman project under word_game/.
-- Implemented full gameplay loop:
-- Displays word progress, attempts remaining, and guessed letters.
-- Handles valid input, duplicate guesses, and incorrect attempts properly.
-- Ends with clear win/loss messages and reveals the full word.
-- Cleaned up redundant lines and improved readability with formatted output.
-- Added final word display and consistent user feedback for every turn.
 
 Testing:
 
