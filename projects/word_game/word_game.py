@@ -10,25 +10,30 @@
 # - User can pick a mode: play Mad Libs or Hangman
 # - Program runs the selected game
 
+
 # Step 1: Show game menu
-# --------------------------------
-# 1. Display title "Welcome to Word Game!"
-# 2. Ask the user to choose a mode:
-#       (1) Play Mad Libs
-#       (2) Play Hangman
-#       (3) Exit
-# 3. Store the user's choice as a variable
+while True:
+    print("\n-- Welcome to Word Game! --")
+    print("Would you like to play either Mad Libs or Hangman?")
+    print("(1) Mad Libs")
+    print("(2) Hangman")
+    print("(3) Exit")
 
-# Step 2: Based on user's choice, run the selected game
-# --------------------------------
-# IF choice is 1 -> import mad_libs and run mad_libs.play()
-# IF choice is 2 -> import hangman and run hangman.play()
-# IF choice is 3 -> exit program
-# ELSE -> display "Invalid choice, please try again"
+    try:
+        options = int(input("Please pick from the options: "))
 
-# Step 3: Optional - wrap logic in a loop so user can replay
-# --------------------------------
-# Keep showing the menu until user chooses Exit
+        if options == 1:
+            print("Starting Mad Libs...")
+        elif options == 2:
+            print("Starting Hangman...")
+        elif options == 3:
+            print("Goodbye! Exiting game.")
+            break
+        else:
+            print("That's not a valid option, please pick again.")
+
+    except ValueError:
+        print("Wrong input — please enter a number, not text.")
 
 
 # Step 4: Update the game state

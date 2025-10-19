@@ -27,9 +27,11 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-### 2025-10-19  
-- Added Step 1 pseudocode for Word Game (menu + game mode logic)  
-- Preparing to start Mad Libs logic next  
+### (2025-10-19)
+- Completed Step 1 of Word Game project.
+- Implemented main menu with input validation and error handling.
+- Tested all options; next step is linking Hangman and Mad Libs functions.
+ 
 
 
 Testing:
