@@ -1,59 +1,28 @@
-# 🕹️ Hangman — Python Mini Game
+### 🕹️ Word Game — Current Build Summary (Milestone: Step 2–3 Complete)
 
-**Project Type:** Lighthouse Labs Milestone  
-**Date Completed:** 2025-10-18  
-**Status:** ✅ Version 1.0 — Fully Functional  
+This version introduces a functional **main menu system** that connects both mini-games — *Mad Libs* and *Hangman* — into one modular program.
 
----
+#### Features Added
+- Implemented `play_games()` function as the project’s main entry point.  
+- Added a **looping menu** allowing players to:
+  - Play *Mad Libs*  
+  - Play *Hangman*  
+  - Exit the program gracefully.  
+- Integrated module imports:
+  - `from mad_libs import start_mad_libs`  
+  - `from hangman import start_hangman`  
+- Added input validation for smoother user experience.  
+- Structured code for future expansion (Step 4–6).
 
-## 🎯 Overview
-This project is a simplified **Hangman** game built entirely in Python.  
-The player tries to guess a hidden word one letter at a time before running out of attempts.  
-It demonstrates logic control, loops, conditionals, and string manipulation — all core Python concepts.
+#### Developer Notes
+This milestone marks a major progression in combining separate Python scripts into a cohesive multi-module program.  
+The project now demonstrates:
+- Function encapsulation (`def play_games()`)  
+- Input handling with loops  
+- Basic modular architecture across files  
 
----
-
-## ⚙️ Features
-- Randomly selects a secret word from a list  
-- Tracks user guesses and remaining attempts  
-- Prevents duplicate guesses (no double penalty)  
-- Reveals letters in real-time as they’re guessed  
-- Ends with a clear win/loss message and final word reveal  
-
----
-
-## 🧠 Skills Practiced
-- `while` loops and iteration  
-- `if / else` conditional logic  
-- String methods (`lower()`, `strip()`, `join()`)  
-- List indexing and updates  
-- User input validation  
-- Python set usage for storing guesses  
-
----
-
-## 🧩 Example Output
--- Current State ---
-Word so far: _ _ _ _ _ _
-Attempts left: 6
-Tried: -
-
-Please put in a letter: o
-Nice job on the right letter!
-Word so far: _ o _ _ o _
-Attempts left: 6
-Tried: o
-
----
-
-## 🪜 Next Steps
-- Add difficulty levels (easy / normal / hard)
-- Include ASCII art for each hangman stage
-- Integrate into `word_game.py` main menu alongside *Mad Libs*
-
----
-
-## 🧾 License
-This project is for educational purposes under Lighthouse Labs curriculum guidelines.
-  
+#### Next Steps
+- [ ] Implement game triggers to launch each mode fully.  
+- [ ] Add replay and end-game messages per mode.  
+- [ ] Begin integrating Step 4–6 (state updates and refinements).  
  

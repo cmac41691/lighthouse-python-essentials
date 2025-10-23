@@ -27,19 +27,16 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 
 
-### (2025-10-19)
-- Completed Step 1 of Word Game project.
-- Implemented main menu with input validation and error handling.
-- Tested all options; next step is linking Hangman and Mad Libs functions.
- 
+## Progress Log — October 23, 2025
 
+- Completed Step 2 and Step 3 of the Word Game project.
+- Implemented `play_games()` function to handle menu input and trigger Mad Libs or Hangman modules.
+- Added replay logic using a while loop.
+- Tested interaction flow successfully — menu choices, exit condition, and modular structure all work.
+- Next: finalize Step 4–6 to connect both mini-games into one full interactive program.
 
-Testing:
-
-- Verified multiple rounds — correct letters reveal properly.
-- Wrong guesses decrement attempts accurately.
-- Game ends cleanly with correct or failure state.
-- No input or crash errors during runtime.
+💡 Reflection:
+This session was a huge step forward in understanding modular programming — combining functions and imports across files. The menu logic feels intuitive now, and structure looks clean. Confidence is growing fast!
 
 ## Next Steps:
 

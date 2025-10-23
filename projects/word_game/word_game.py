@@ -12,28 +12,36 @@
 
 
 # Step 1: Show game menu
-while True:
-    print("\n-- Welcome to Word Game! --")
-    print("Would you like to play either Mad Libs or Hangman?")
-    print("(1) Mad Libs")
-    print("(2) Hangman")
-    print("(3) Exit")
+# import two files for word game picks 
+from mad_libs import start_mad_libs 
+from hangman import start_hangman
 
-    try:
-        options = int(input("Please pick from the options: "))
+# run a function with modules too     
+def play_games():
+    print("Welcome to Word Game!")
 
-        if options == 1:
-            print("Starting Mad Libs...")
-        elif options == 2:
-            print("Starting Hangman...")
-        elif options == 3:
-            print("Goodbye! Exiting game.")
+    while True:
+        print("\nMenu options:")
+        print("1) Play Mad Libs")
+        print("2) Play Hangman")
+        print("3) Exit")
+
+        player_choice = input("Enter your choice (1 for Mad Libs, 2 for Hangman, 3 to Exit): ").strip()
+
+        if player_choice == "1":
+            print("You picked Mad Libs")
+            start_mad_libs()
+        elif player_choice == "2":
+            print("You picked Hangman")
+            start_hangman()
+        elif player_choice == "3":
+            print("Farewell")
             break
         else:
-            print("That's not a valid option, please pick again.")
+            print("That's not a choice — try again")
 
-    except ValueError:
-        print("Wrong input — please enter a number, not text.")
+# run it
+play_games()
 
 
 # Step 4: Update the game state
