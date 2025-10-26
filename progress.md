@@ -18,7 +18,7 @@ This file documents my progress through the **Programming Essentials with Python
 
 - [✅] Lesson 1: Your First Lines of Python  
 - [✅] Lesson 2: Working with Variables  
-- [ ] Lesson 3: Strings and Input  
+- [✅] Lesson 3: Strings and Input  
 - [ ] Lesson 4: Decisions and Conditions  
 - [ ] Lesson 5: Loops and Repetition  
 - [ ] Lesson 6: Functions and Reuse  
