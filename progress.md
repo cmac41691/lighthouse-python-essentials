@@ -26,21 +26,25 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
+## Progress Update — 2025-10-26
 
-## Progress Log — October 23, 2025
+### ✅ Completed:
+- Finished **Step 4** of the Word Game project (Lighthouse Python Essentials).
+- Implemented **replay loop logic** using `while True`.
+- Added **player choice input**, `if/elif/else` handling, and `break` for exit flow.
+- Integrated **Mad Libs** and **Hangman** modules using import statements.
+- Fixed Python syntax issues (`.strip()` vs `.trim()`) and placement of `break` within loop.
+- Tested the replay system — confirmed functional and user-friendly.
 
-- Completed Step 2 and Step 3 of the Word Game project.
-- Implemented `play_games()` function to handle menu input and trigger Mad Libs or Hangman modules.
-- Added replay logic using a while loop.
-- Tested interaction flow successfully — menu choices, exit condition, and modular structure all work.
-- Next: finalize Step 4–6 to connect both mini-games into one full interactive program.
+### 🧠 Key Takeaways:
+- Learned how to properly structure a **loop for replaying games**.
+- Gained better understanding of **module imports and function calls**.
+- Strengthened grasp on **loop control (`break`, `continue`)** and user input handling.
+- Progress toward mastering **multi-module project design** in Python.
 
-💡 Reflection:
-This session was a huge step forward in understanding modular programming — combining functions and imports across files. The menu logic feels intuitive now, and structure looks clean. Confidence is growing fast!
+### 🔜 Next Step:
+- Begin refining **Step 5** (game state updates or polish).
+- Write pseudocode to define how to handle any future replay/score tracking logic.
 
-## Next Steps:
-
-Begin planning Mad Libs → Hangman integration into word_game.py.
-
-Optional polish: color output or difficulty selector (easy/medium/hard)
+Optional polish: color output or difficulty selector (easy/medium/hard) 
 
