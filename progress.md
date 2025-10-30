@@ -48,3 +48,10 @@ This file documents my progress through the **Programming Essentials with Python
 
 Optional polish: color output or difficulty selector (easy/medium/hard) 
 
+
+---
+
+💭 I think in pseudocode, build with intent, and refine through practice.  
+AI helps me reason faster, not skip the work.  
+Each project documents real self-taught progress.
+
