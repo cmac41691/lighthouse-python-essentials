@@ -3,6 +3,9 @@
 # Goal: Build a simple Mad Libs generator that asks the user for words 
 # and fills them into a story template.
 
+def start_mad_libs():
+    print("Welcome to Mad Libs!")
+
 
 # Step 1 & 2: Collect user inputs
 player_character = input("Enter in your character's name: ")
@@ -21,3 +24,6 @@ a world of exploration awaits you!
 print("/n=== Hero's Tale Start ===/n")
 print(hero_journey)
 print("=== THE END ===")
+
+if __name__ == "__main__":
+    start_mad_libs()

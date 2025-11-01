@@ -5,6 +5,9 @@
 
 import random
 
+def start_hangman():
+    print("Welcome to Hangman!")
+
 # --- Step 1: choose a secret word ---
 secret_words = ["python", "lighthouse", "adventure", "journey", "code"]
 secret_word = random.choice(secret_words)
@@ -54,3 +57,8 @@ if "_" not in hidden:
     print(f"You got it! The word was: {secret_word}")
 else:
     print(f"I'm sorry, you ran out of attempts. The word was: {secret_word}")
+
+
+
+if __name__ == "__main__":
+    start_hangman()

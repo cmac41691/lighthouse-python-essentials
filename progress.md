@@ -26,15 +26,11 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-## Progress Update — 2025-10-26
-
-### ✅ Completed:
-- Finished **Step 4** of the Word Game project (Lighthouse Python Essentials).
-- Implemented **replay loop logic** using `while True`.
-- Added **player choice input**, `if/elif/else` handling, and `break` for exit flow.
-- Integrated **Mad Libs** and **Hangman** modules using import statements.
-- Fixed Python syntax issues (`.strip()` vs `.trim()`) and placement of `break` within loop.
-- Tested the replay system — confirmed functional and user-friendly.
+### ✅ Completed — 2025-11-01
+- Implemented `game_state` and `game_mode` for modular control flow.
+- Added replay logic with `.lower()` validation.
+- Integrated conditional exit with clean user messaging.
+- Verified menu stability and flow.
 
 ### 🧠 Key Takeaways:
 - Learned how to properly structure a **loop for replaying games**.

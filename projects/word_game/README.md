@@ -19,3 +19,7 @@ Players can choose which game to play from a menu and replay as many times as th
 - Add polish and fine-tune end-of-game messages
 - Explore optional game scoring or tracking systems
 - Finalize and submit for Lighthouse Labs review
+
+## Dev Reflection
+> Today I learned the value of tracking state variables in modular programs.  
+> Managing loops, imports, and user input together made me realize how game logic mirrors real-world app flow.

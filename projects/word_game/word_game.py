@@ -32,18 +32,22 @@ def play_games():
         if player_choice == "1":
             print("\nStarting Mad Libs...")
             start_mad_libs()
+            game_state = "mad_libs_complete"
             print("Mad Libs complete!")
 
         elif player_choice == "2":
             print("\nStarting Hangman...")
             start_hangman()
+            game_state = "hangman_complete"
             print("Hangman session complete!")
 
         elif player_choice == "3":
+            game_state = "exit"    
             print("Farewell! Exiting Word Games...")
             break
 
         else:
+            game_state = "finished"
             print("That's not a valid choice — try again.")
             continue
 
@@ -54,7 +58,8 @@ def play_games():
             break
 
 # run it
-play_games()
+if __name__ == "__main__":
+   play_games()
 
 
 
