@@ -26,11 +26,13 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-### ✅ Completed — 2025-11-01
-- Implemented `game_state` and `game_mode` for modular control flow.
-- Added replay logic with `.lower()` validation.
-- Integrated conditional exit with clean user messaging.
-- Verified menu stability and flow.
+### 🗓 Progress Update — 2025-11-02
+- Implemented ValueError exception handling to validate menu input.
+- Added player score system with cumulative session tracking.
+- Integrated replay loop with improved user experience and input validation.
+- Tested edge cases for input stability and confirmed loop functionality.
+- Word Game Phase 1 stable — ready for further enhancements.
+
 
 ### 🧠 Key Takeaways:
 - Learned how to properly structure a **loop for replaying games**.

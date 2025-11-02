@@ -11,81 +11,55 @@
 # - Program runs the selected game
 
 
-# Step 1: Show game menu
-# import two files for word game picks
 from mad_libs import start_mad_libs
 from hangman import start_hangman
 
-# run a function with modules too
 def play_games():
-    print("Welcome to Word Games!")
+    """Main loop for Word Game hub."""
+    score = 0
+    print("=== Welcome to Word Games ===")
 
     while True:
-        # menu
-        print("\nMenu options")
-        print("(1) Play Mad Libs")
-        print("(2) Play Hangman")
-        print("(3) Exit")
+        try:
+            print("\nMenu options:")
+            print("1. Play Mad Libs")
+            print("2. Play Hangman")
+            print("3. Exit")
 
-        player_choice = input("Please pick a choice (1, 2, or 3): ").strip()
+            player_choice = input("Choose 1, 2, or 3: ").strip()
 
-        if player_choice == "1":
-            print("\nStarting Mad Libs...")
-            start_mad_libs()
-            game_state = "mad_libs_complete"
-            print("Mad Libs complete!")
+            if player_choice not in ("1", "2", "3"):
+                raise ValueError("Invalid option, please try again.")
 
-        elif player_choice == "2":
-            print("\nStarting Hangman...")
-            start_hangman()
-            game_state = "hangman_complete"
-            print("Hangman session complete!")
-
-        elif player_choice == "3":
-            game_state = "exit"    
-            print("Farewell! Exiting Word Games...")
-            break
-
-        else:
-            game_state = "finished"
-            print("That's not a valid choice — try again.")
+        except ValueError as error:
+            print(f" {error}")
             continue
 
-        # replay prompt after user finishes a game
-        play_again = input("\nWould you like to play again? (y/n): ").lower().strip()
-        if play_again != "y":
-            print("Thanks for playing! See you next time for more Word Games!")
+        if player_choice == "1":
+            print("Starting Mad Libs...")
+            start_mad_libs()
+            score += 1
+            print(f" Session Score: {score}")
+
+        elif player_choice == "2":
+            print(" Starting Hangman...")
+            start_hangman()
+            score += 1
+            print(f" Session Score: {score}")
+
+        elif player_choice == "3":
+            print(" Goodbye! Thanks for playing.")
             break
 
-# run it
+        play_again = input("\nPlay again? (y/n): ").lower().strip()
+        if play_again != "y":
+            print("Thanks for playing! Goodbye!")
+            break
+
+    print(f"\nFinal Session Score: {score}")
+
 if __name__ == "__main__":
-   play_games()
-
-
-
-# Step 4: Update the game state
-# 👉 Google: "python replace list element by index"
-# - If the letter is in the word, reveal it in the underscores
-# - If not, subtract from attempts
-
-# Step 5: Print the current state
-# 👉 Google: "python join list into string"
-# - Show the word with guessed letters + underscores
-# - Show remaining attempts
-
-# Step 6: End the game
-# 👉 Google: "python while loop with break"
-# - If all letters guessed, user wins
-# - If attempts run out, game over
-
-# Example interaction:
-# Word: _ _ _ _ _ 
-# Guess a letter: o
-# Word: _ o _ _ o
-# Attempts left: 4
-# ... 
-
-
+    play_games()
 
 
 
