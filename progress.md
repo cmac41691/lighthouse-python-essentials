@@ -26,12 +26,27 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-### 🗓 Progress Update — 2025-11-02
-- Implemented ValueError exception handling to validate menu input.
-- Added player score system with cumulative session tracking.
-- Integrated replay loop with improved user experience and input validation.
-- Tested edge cases for input stability and confirmed loop functionality.
-- Word Game Phase 1 stable — ready for further enhancements.
+### ✅ 2025-11-08 — Phase 2: Trivia Integration Complete
+
+**Highlights**
+- Implemented **`trivia.py`** as a standalone modular game.
+- Added `start_trivia()` function with:
+  - Dynamic question/answer system.
+  - Input validation and replay logic.
+  - Score tracking and end-of-game summary.
+- Integrated Trivia into the main hub (`word_game.py`) as option **3**.
+- Verified full runtime stability — all three games (Mad Libs, Hangman, Trivia) function independently and loop back correctly.
+- Tested imports and menu flow in VS Code terminal — no crashes or invalid references.
+
+**Reflection**
+> Today marks a big shift from single-script logic to a **true modular structure**.  
+> The hub now behaves like a controller, and each mini-game is an independent module — easy to scale, debug, or expand in future phases.
+
+**Next Goals (Phase 3 – Planned)**
+- Add persistent scoring (save scores to JSON or text file).
+- Expand Trivia with external question packs.
+- Introduce ASCII art or styled text for the main menu.
+- Begin lightweight testing scripts for each module.
 
 
 ### 🧠 Key Takeaways:
