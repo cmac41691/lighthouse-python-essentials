@@ -69,17 +69,29 @@ projects/
 
 🧾 Update Log
 
-- 2025-11-02 — Phase 1 (Stability Update)
-- Added error handling for invalid menu input
-- Introduced session scoring system
-- Integrated replay loop for smoother UX
-- Verified game hub runs without breaking logic
+- 2025-11-08 — Phase 2 (Trivia Integration)
+- Added trivia.py mini-game module.
+- Linked into hub menu under option (3).
+- Verified stable gameplay and replay logic.
 
-🌱 Phase 2 Goals (Next Steps)
+🌱 Phase 3 Goals (Next Steps)
 
-- Add a third mini-game (e.g., Word Guess or Trivia).
+- Add persistent scoring system (save to JSON/text). 
+- Expand question banks for Trivia dynamically.
+- Introduce ASCII art menu.
+- Implement unit testing for reliability checks.
+---
 
-- Implement persistent scoring with file storage (save/load progress).
-- Add main menu ASCII art or styled UI for flair.
-- Refactor constants (menu text, messages) into reusable variables.
-- Begin unit testing for modular validation.
+## 🎮 Projects — Word Game Hub (Phase 2)
+
+Phase 2 expands the Word Game Hub by introducing a **Trivia module**, completing the trilogy of mini-games: Mad Libs, Hangman, and Trivia.  
+This update focuses on modularity, replayability, and error-resilient design.
+
+### 🧩 Key Features
+- **New Game:** Trivia quiz implemented in `trivia.py` with multiple-choice questions.  
+- **Replay System:** Added per-game restart loop without breaking main flow.  
+- **Menu Integration:** Updated hub (`word_game.py`) with option **3. Play Trivia**.  
+- **Stable Imports:** Each game runs as a self-contained function — no cross-file interference.  
+- **Improved Structure:** Clear separation of logic, menu control, and error handling.
+
+

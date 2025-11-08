@@ -13,6 +13,7 @@
 
 from mad_libs import start_mad_libs
 from hangman import start_hangman
+from trivia import start_trivia
 
 def play_games():
     """Main loop for Word Game hub."""
@@ -24,11 +25,12 @@ def play_games():
             print("\nMenu options:")
             print("1. Play Mad Libs")
             print("2. Play Hangman")
-            print("3. Exit")
+            print("3. Play Trivia")
+            print("4. Exit")
 
-            player_choice = input("Choose 1, 2, or 3: ").strip()
+            player_choice = input("Choose 1, 2, 3, or 4: ").strip()
 
-            if player_choice not in ("1", "2", "3"):
+            if player_choice not in ("1", "2", "3", "4"):
                 raise ValueError("Invalid option, please try again.")
 
         except ValueError as error:
@@ -39,7 +41,7 @@ def play_games():
             print("Starting Mad Libs...")
             start_mad_libs()
             score += 1
-            print(f" Session Score: {score}")
+            print(f" Session Score: {score}")  
 
         elif player_choice == "2":
             print(" Starting Hangman...")
@@ -48,6 +50,12 @@ def play_games():
             print(f" Session Score: {score}")
 
         elif player_choice == "3":
+            print("Starting Trivia..") 
+            start_trivia()
+            score += 1
+            print(f"Session Score: {score}")
+
+        elif player_choice == "4":
             print(" Goodbye! Thanks for playing.")
             break
 
