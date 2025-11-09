@@ -26,38 +26,47 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-### ✅ 2025-11-08 — Phase 2: Trivia Integration Complete
+---
 
-**Highlights**
-- Implemented **`trivia.py`** as a standalone modular game.
-- Added `start_trivia()` function with:
-  - Dynamic question/answer system.
-  - Input validation and replay logic.
-  - Score tracking and end-of-game summary.
-- Integrated Trivia into the main hub (`word_game.py`) as option **3**.
-- Verified full runtime stability — all three games (Mad Libs, Hangman, Trivia) function independently and loop back correctly.
-- Tested imports and menu flow in VS Code terminal — no crashes or invalid references.
-
-**Reflection**
-> Today marks a big shift from single-script logic to a **true modular structure**.  
-> The hub now behaves like a controller, and each mini-game is an independent module — easy to scale, debug, or expand in future phases.
-
-**Next Goals (Phase 3 – Planned)**
-- Add persistent scoring (save scores to JSON or text file).
-- Expand Trivia with external question packs.
-- Introduce ASCII art or styled text for the main menu.
-- Begin lightweight testing scripts for each module.
+### ✅ 2025-11-09 — Phase 3: Persistent Score System (JSON Integration)
 
 
-### 🧠 Key Takeaways:
-- Learned how to properly structure a **loop for replaying games**.
-- Gained better understanding of **module imports and function calls**.
-- Strengthened grasp on **loop control (`break`, `continue`)** and user input handling.
-- Progress toward mastering **multi-module project design** in Python.
+## Highlights
 
-### 🔜 Next Step:
-- Begin refining **Step 5** (game state updates or polish).
-- Write pseudocode to define how to handle any future replay/score tracking logic.
+Designed a JSON-based persistence layer to save and load player progress across sessions.
+Wrote pseudocode prototypes for two helper functions:
+load_or_create() — initializes or loads score_data.json.
+save_score() — writes updated results back to disk.
+
+
+Defined an extensible JSON schema:
+{
+  "mad_libs": 0,
+  "hangman": 0,
+  "trivia": 0,
+  "total_sessions": 0
+}
+Verified understanding of the json and os modules through documentation research.
+
+Planned integration into the main game hub (word_game.py) for next phase.
+
+## Reflection
+This was a big leap. I used official Python documentation to independently design a working persistence system.
+It showed I can research, interpret, and apply technical references on my own — a key step toward backend-level thinking.
+
+## Next Goals (Phase 4 – Planned)
+- Connect load_or_create() and save_score() with the main Word Game Hub.
+- Display cumulative results after each session.
+- Implement error handling for missing or corrupted JSON data.
+- Consider expanding the format for future leaderboard or database support.
+
+
+## Key Takeaways
+
+- Learned practical file handling using context managers (with open).
+- Understood the flow of reading/writing structured data with json.dump / json.load.
+- Practiced designing reusable, modular utility functions.
+- Reinforced the ability to build solutions directly from official documentation.
 
 Optional polish: color output or difficulty selector (easy/medium/hard) 
 
