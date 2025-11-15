@@ -10,6 +10,7 @@
 # - User can pick a mode: play Mad Libs or Hangman
 # - Program runs the selected game
 
+from storage import load_or_create_score, save_score
 
 from mad_libs import start_mad_libs
 from hangman import start_hangman
@@ -20,7 +21,10 @@ def play_games():
     score = 0
     print("=== Welcome to Word Games ===")
 
-    while True:
+score_data = load_or_create_score()  
+print(f"Current Stats -> Total Session: {score_data}['total_sessions']")
+
+while True:
         try:
             print("\nMenu options:")
             print("1. Play Mad Libs")
@@ -36,7 +40,9 @@ def play_games():
         except ValueError as error:
             print(f" {error}")
             continue
-
+    # load_or_create_score()
+    # print("Current Stats -> Total Sessions: X")   
+     
         if player_choice == "1":
             print("Starting Mad Libs...")
             start_mad_libs()
@@ -64,7 +70,12 @@ def play_games():
             print("Thanks for playing! Goodbye!")
             break
 
-    print(f"\nFinal Session Score: {score}")
+# score_data["total_sessions"] += 1
+# save_score(score_data)
+# #print("Final Session Score:")
+#print("Mad Libs: X | Hangman: Y | Trivia: Z | Total Session: N")        
+
+print(f"\nFinal Session Score: {score}")
 
 if __name__ == "__main__":
     play_games()

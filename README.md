@@ -95,3 +95,18 @@ This update focuses on modularity, replayability, and error-resilient design.
 - **Improved Structure:** Clear separation of logic, menu control, and error handling.
 
 
+### 🧠 New Feature — Persistent Save System (v4)
+
+The Word Game project now includes a **JSON-based save system** that tracks total plays across all modes.
+
+**How it works**
+- On launch, the game loads data from `score_data.json` (or creates it if missing).
+- Each time you play a game, the related score counter increases.
+- When you quit, progress automatically saves back to disk.
+- The data persists across future runs, so you can track your total sessions over time.
+
+**Example Output**
+📊 Current Stats → Total Sessions: 5
+
+Final Stats:
+Mad Libs: 2 | Hangman: 1 | Trivia: 2 | Total Sessions: 5

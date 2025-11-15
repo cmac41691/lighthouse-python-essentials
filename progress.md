@@ -28,45 +28,36 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-### ✅ 2025-11-09 — Phase 3: Persistent Score System (JSON Integration)
+### ✅ 2025-11-15 — Phase 4: Persistent Save System (Integrated with Word Game)
 
+**Highlights**
+- Added **`storage.py`** as a standalone persistence module for saving and loading player data.  
+- Implemented two key functions:
+  - `load_or_create_score()` → initializes or loads `score_data.json`.  
+  - `save_score()` → writes updates back to disk after each session.  
+- Integrated persistence into `word_game.py`:
+  - Displays total sessions at program start.
+  - Updates counts for **Mad Libs**, **Hangman**, and **Trivia** each time a game is played.
+  - Saves all changes seamlessly between runs.
+- Confirmed import and function calls work cleanly — no runtime errors or circular imports.
+- Prepared printout templates for **final scoreboard display** after each session.
 
-## Highlights
+**Reflection**
+> This update marks my first full implementation of a persistent data layer.  
+> I now understand how to handle **file I/O**, **JSON serialization**, and **state management** between sessions — key backend fundamentals.  
+> Seeing the game remember player progress made everything feel *real* — like I built an actual app.
 
-Designed a JSON-based persistence layer to save and load player progress across sessions.
-Wrote pseudocode prototypes for two helper functions:
-load_or_create() — initializes or loads score_data.json.
-save_score() — writes updated results back to disk.
+**Next Goals (Phase 5 – Planned)**
+- Add visual scoreboard formatting (📊 emojis and clean alignment).  
+- Implement error handling for missing or corrupted JSON data.  
+- Experiment with loading trivia questions from external JSON packs.  
+- Optional: extend save system for multi-player profiles.
 
-
-Defined an extensible JSON schema:
-{
-  "mad_libs": 0,
-  "hangman": 0,
-  "trivia": 0,
-  "total_sessions": 0
-}
-Verified understanding of the json and os modules through documentation research.
-
-Planned integration into the main game hub (word_game.py) for next phase.
-
-## Reflection
-This was a big leap. I used official Python documentation to independently design a working persistence system.
-It showed I can research, interpret, and apply technical references on my own — a key step toward backend-level thinking.
-
-## Next Goals (Phase 4 – Planned)
-- Connect load_or_create() and save_score() with the main Word Game Hub.
-- Display cumulative results after each session.
-- Implement error handling for missing or corrupted JSON data.
-- Consider expanding the format for future leaderboard or database support.
-
-
-## Key Takeaways
-
-- Learned practical file handling using context managers (with open).
-- Understood the flow of reading/writing structured data with json.dump / json.load.
-- Practiced designing reusable, modular utility functions.
-- Reinforced the ability to build solutions directly from official documentation.
+**Key Takeaways**
+- Learned how to separate logic into **modular files** (`storage.py`, `word_game.py`, etc.).  
+- Applied **open/read/write** patterns using context managers.  
+- Strengthened understanding of **JSON** and structured data manipulation.  
+- Reached the point where the project behaves like a real, persistent application.
 
 Optional polish: color output or difficulty selector (easy/medium/hard) 
 
