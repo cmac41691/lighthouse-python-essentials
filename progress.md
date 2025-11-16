@@ -25,33 +25,35 @@ This file documents my progress through the **Programming Essentials with Python
 - [ ] Final Project: Word Game
 
 ---
-### ✅ 2025-11-16 — Phase 4: Persistent JSON Integration & Data Validation
+---
 
-**Highlights**
-- Fully integrated `storage.py` into the Word Game hub for persistent session data.  
-- Implemented JSON save/load system using `load_or_create_score()` and `save_score()` functions.  
-- Verified long-term data consistency under stress tests — score tracking and replay cycles remained stable.  
-- Added session summary output showing total games played across all runs.  
-- Polished replay flow and ensured graceful termination logic (`break` handling fixed).  
+### 🧩 2025-11-16 — Phase 4: Persistent Storage System Complete  
 
-**Reflection**
-> Today marks the completion of the persistence system — the project now retains progress between sessions like a real-world app.  
-> What began as a simple word-based prototype now functions as a modular, state-driven Python program with backend-style behavior.  
-> Each phase built on solid pseudocode planning, documentation research, and practical testing — the foundation of professional software development.
+**Highlights**  
+- Added a dedicated `storage.py` module for **saving and loading score data** using JSON.  
+- Implemented new functions:  
+  - `load_or_create_score()` → Automatically creates `score_data.json` if none exists.  
+  - `save_score()` → Updates player progress after each session.  
+- Integrated persistent tracking into `word_game.py` with per-game stats (Mad Libs / Hangman / Trivia / Total Sessions).  
+- Updated `.gitignore` to exclude runtime files (`score_data.json`) and IDE/system files.  
+- Refactored and cleaned menu logic, ensuring data saves safely between runs.  
+- Verified JSON durability under multiple test loops — no corruption or overwrite errors detected.  
 
-**Next Goals (Phase 5 — Planned)**
-- Add ASCII or color-coded scoreboard UI.  
-- Introduce difficulty levels (Easy / Medium / Hard).  
-- Prototype optional leaderboard system using local file ranking.  
-- Conduct final code cleanup, docstrings, and internal QA pass.  
+**Reflection**  
+> This phase marked my **first true step into stateful Python programming** — adding persistence and modular design.  
+> The Word Game Hub now stores player progress just like a production app.  
+> It’s a big confidence boost seeing data persist beyond runtime and integrating cleanly across modules.  
 
-**Key Takeaways**
-- Achieved a clean modular architecture across four files (`word_game.py`, `mad_libs.py`, `hangman.py`, `trivia.py`, `storage.py`).  
-- Learned practical persistence via JSON — lightweight but production-relevant.  
-- Strengthened understanding of loops, file handling, and data reliability under stress.  
-- Reinforced “pseudocode → implementation → refinement” workflow discipline.
+**Next Goals (Phase 5 – Prototyping)**  
+- Add simple text-based stats dashboard (display cumulative results).  
+- Improve menu visuals (ASCII art / colors).  
+- Add difficulty or “best of X rounds” mode for trivia.  
+- Begin design of save-slot prototype (for future user profiles).  
 
-> 💡 *"Self-taught doesn’t mean alone — it means building your own map and refining it every step of the way."*
+---
+
+💭 *Each phase builds my confidence — from pseudocode, to loops, to full-scale modular design.  
+This milestone shows I can handle persistent data like a backend developer in training.*
 
 ---
 
