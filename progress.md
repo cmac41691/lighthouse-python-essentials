@@ -4,11 +4,12 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-## 🗓 Session 0: Course Enrollment & Setup
-- Signed up for **Programming Essentials with Python** (Lighthouse Labs)
-- Reviewed syllabus and lesson structure
-- Prepared `progress.md` for tracking
-- Ready to begin Lesson 1 on next study day
+### 2025-11-16 — Started Lesson 5 (Loops & Repetition)
+
+**Setup**
+- Created new directory: `chapter5/`
+- Added files for each section (intro_to_looping.py, making_new_data.py, iterating_over_range.py, exercise_actors.py, strings_as_lists.py)
+- Beginning Looping & Iterating chapter — same workflow: pseudocode → Python → test → commit.
 
 
 ---
