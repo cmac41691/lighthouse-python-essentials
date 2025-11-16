@@ -25,39 +25,36 @@ This file documents my progress through the **Programming Essentials with Python
 - [ ] Final Project: Word Game
 
 ---
+### ✅ 2025-11-16 — Phase 4: Persistent JSON Integration & Data Validation
+
+**Highlights**
+- Fully integrated `storage.py` into the Word Game hub for persistent session data.  
+- Implemented JSON save/load system using `load_or_create_score()` and `save_score()` functions.  
+- Verified long-term data consistency under stress tests — score tracking and replay cycles remained stable.  
+- Added session summary output showing total games played across all runs.  
+- Polished replay flow and ensured graceful termination logic (`break` handling fixed).  
+
+**Reflection**
+> Today marks the completion of the persistence system — the project now retains progress between sessions like a real-world app.  
+> What began as a simple word-based prototype now functions as a modular, state-driven Python program with backend-style behavior.  
+> Each phase built on solid pseudocode planning, documentation research, and practical testing — the foundation of professional software development.
+
+**Next Goals (Phase 5 — Planned)**
+- Add ASCII or color-coded scoreboard UI.  
+- Introduce difficulty levels (Easy / Medium / Hard).  
+- Prototype optional leaderboard system using local file ranking.  
+- Conduct final code cleanup, docstrings, and internal QA pass.  
+
+**Key Takeaways**
+- Achieved a clean modular architecture across four files (`word_game.py`, `mad_libs.py`, `hangman.py`, `trivia.py`, `storage.py`).  
+- Learned practical persistence via JSON — lightweight but production-relevant.  
+- Strengthened understanding of loops, file handling, and data reliability under stress.  
+- Reinforced “pseudocode → implementation → refinement” workflow discipline.
+
+> 💡 *"Self-taught doesn’t mean alone — it means building your own map and refining it every step of the way."*
 
 ---
 
-### ✅ 2025-11-15 — Phase 4: Persistent Save System (Integrated with Word Game)
-
-**Highlights**
-- Added **`storage.py`** as a standalone persistence module for saving and loading player data.  
-- Implemented two key functions:
-  - `load_or_create_score()` → initializes or loads `score_data.json`.  
-  - `save_score()` → writes updates back to disk after each session.  
-- Integrated persistence into `word_game.py`:
-  - Displays total sessions at program start.
-  - Updates counts for **Mad Libs**, **Hangman**, and **Trivia** each time a game is played.
-  - Saves all changes seamlessly between runs.
-- Confirmed import and function calls work cleanly — no runtime errors or circular imports.
-- Prepared printout templates for **final scoreboard display** after each session.
-
-**Reflection**
-> This update marks my first full implementation of a persistent data layer.  
-> I now understand how to handle **file I/O**, **JSON serialization**, and **state management** between sessions — key backend fundamentals.  
-> Seeing the game remember player progress made everything feel *real* — like I built an actual app.
-
-**Next Goals (Phase 5 – Planned)**
-- Add visual scoreboard formatting (📊 emojis and clean alignment).  
-- Implement error handling for missing or corrupted JSON data.  
-- Experiment with loading trivia questions from external JSON packs.  
-- Optional: extend save system for multi-player profiles.
-
-**Key Takeaways**
-- Learned how to separate logic into **modular files** (`storage.py`, `word_game.py`, etc.).  
-- Applied **open/read/write** patterns using context managers.  
-- Strengthened understanding of **JSON** and structured data manipulation.  
-- Reached the point where the project behaves like a real, persistent application.
 
 Optional polish: color output or difficulty selector (easy/medium/hard) 
 

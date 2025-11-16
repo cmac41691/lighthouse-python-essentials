@@ -82,31 +82,38 @@ projects/
 - Implement unit testing for reliability checks.
 ---
 
-## 🎮 Projects — Word Game Hub (Phase 2)
+## 💾 Persistent Score System (Phase 4)
 
-Phase 2 expands the Word Game Hub by introducing a **Trivia module**, completing the trilogy of mini-games: Mad Libs, Hangman, and Trivia.  
-This update focuses on modularity, replayability, and error-resilient design.
+The Word Game Hub now includes a **JSON-based persistence layer** to save player stats between sessions.
 
-### 🧩 Key Features
-- **New Game:** Trivia quiz implemented in `trivia.py` with multiple-choice questions.  
-- **Replay System:** Added per-game restart loop without breaking main flow.  
-- **Menu Integration:** Updated hub (`word_game.py`) with option **3. Play Trivia**.  
-- **Stable Imports:** Each game runs as a self-contained function — no cross-file interference.  
-- **Improved Structure:** Clear separation of logic, menu control, and error handling.
+### 🧠 Features
+- Automatically loads or creates `score_data.json` on startup.  
+- Tracks cumulative progress for:
+  - `mad_libs`
+  - `hangman`
+  - `trivia`
+  - `total_sessions`
+- Saves updated results after each session.  
+- Displays a live scoreboard after every exit or replay cycle.
+
+### ⚙️ Technical Summary
+| File | Purpose |
+|------|----------|
+| `storage.py` | Handles JSON read/write functions |
+| `word_game.py` | Central hub that calls save/load logic |
+| `score_data.json` | Stores persistent player data |
+
+### 🧩 Example Output
+📊 Current Stats → Total Sessions: 3
+
+🎭 Starting Mad Libs…
+Game Over!
+Your Score: 3/3
+
+=== Final Session Score ===
+Mad Libs: 4 | Hangman: 2 | Trivia: 3 | Total Sessions: 3
 
 
-### 🧠 New Feature — Persistent Save System (v4)
-
-The Word Game project now includes a **JSON-based save system** that tracks total plays across all modes.
-
-**How it works**
-- On launch, the game loads data from `score_data.json` (or creates it if missing).
-- Each time you play a game, the related score counter increases.
-- When you quit, progress automatically saves back to disk.
-- The data persists across future runs, so you can track your total sessions over time.
-
-**Example Output**
-📊 Current Stats → Total Sessions: 5
-
-Final Stats:
-Mad Libs: 2 | Hangman: 1 | Trivia: 2 | Total Sessions: 5
+### ✅ Status
+> Phase 4 completed successfully — persistent storage verified under stress testing.  
+> Phase 5 will focus on UI/UX and leaderboard enhancements.

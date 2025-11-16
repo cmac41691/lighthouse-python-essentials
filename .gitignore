@@ -25,3 +25,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# ============================
+# Game-Specific Runtime Data
+# ============================
+# Ignore local JSON score data (generated at runtime)
+projects/word_game/score_data.json
