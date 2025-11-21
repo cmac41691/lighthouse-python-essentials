@@ -10,7 +10,8 @@ This file documents my progress through the **Programming Essentials with Python
 - Created new directory: `chapter5/`
 - Added files for each section (intro_to_looping.py, making_new_data.py, iterating_over_range.py, exercise_actors.py, strings_as_lists.py)
 - Beginning Looping & Iterating chapter — same workflow: pseudocode → Python → test → commit.
-- Completed Challenge #1 (Countdown Loop)
+- Completed Challenge #2 (Sum Up to N)   
+
 
 ---
 
