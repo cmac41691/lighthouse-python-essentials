@@ -1,4 +1,10 @@
 # Lighthouse Python Essentials
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20With-Python%203.13-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Student-Lighthouse%20Labs-orange">
+</p>
+
+
 
 Welcome to my solutions and notes from the **Programming Essentials with Python** course by [Lighthouse Labs](https://free-courses.lighthouselabs.ca/courses/programming-essentials-with-python).
 
