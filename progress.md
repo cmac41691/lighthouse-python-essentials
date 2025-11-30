@@ -29,17 +29,17 @@ This file documents my progress through the **Programming Essentials with Python
 ---
 ---
 
-### 🧩 2025-11-16 — Phase 4: Persistent Storage System Complete  
+### Phase 5: Persistent Save + Reset System
 
-**Highlights**  
-- Added a dedicated `storage.py` module for **saving and loading score data** using JSON.  
-- Implemented new functions:  
-  - `load_or_create_score()` → Automatically creates `score_data.json` if none exists.  
-  - `save_score()` → Updates player progress after each session.  
-- Integrated persistent tracking into `word_game.py` with per-game stats (Mad Libs / Hangman / Trivia / Total Sessions).  
-- Updated `.gitignore` to exclude runtime files (`score_data.json`) and IDE/system files.  
-- Refactored and cleaned menu logic, ensuring data saves safely between runs.  
-- Verified JSON durability under multiple test loops — no corruption or overwrite errors detected.  
+- Added support for a reset option in the main menu.
+- Data persistence is handled through `storage.py` using JSON.
+- Players can now clear all progress safely without breaking the game.
+
+**Key Functions**
+- `load_or_create_score()` → Loads existing or creates a new save file.
+- `save_score()` → Saves current progress automatically after each session.
+- `reset_score()` → Wipes the JSON file to default zero values on user confirmation.
+ 
 
 **Reflection**  
 > This phase marked my **first true step into stateful Python programming** — adding persistence and modular design.  

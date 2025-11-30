@@ -1,49 +1,42 @@
-# Project: Word Game
-# ------------------
-# Goal: Build a simple word guessing game (like Hangman but simplified).
-# The program should choose a secret word, then let the user guess letters
-# until they either guess the whole word or run out of attempts.
-
-
-
-from storage import load_or_create_score, save_score
+from storage import load_or_create_score, save_score, reset_score
 from mad_libs import start_mad_libs
 from hangman import start_hangman
 from trivia import start_trivia
 
-
 def play_games():
     """Main loop for Word Game hub."""
-    print("=== Welcome to Word Games ===")
+    print("=== Welcome to Word Games Prototype ===")
 
-    # ✅ Load or create persistent score data
+    # Load or create persistent score data
     score_data = load_or_create_score()
     print(f"📊 Current Stats -> Total Sessions: {score_data['total_sessions']}")
 
     while True:
         try:
-            print("\nMenu options:")
+            print("\n==============================")
+            print("Menu Options:")
             print("1. Play Mad Libs")
             print("2. Play Hangman")
             print("3. Play Trivia")
-            print("4. Exit")
+            print("4. Reset Stats")
+            print("5. Exit")
 
-            player_choice = input("Choose 1, 2, 3, or 4: ").strip()
-            if player_choice not in ("1", "2", "3", "4"):
-                raise ValueError("Invalid option, please try again.")
-        
+            player_choice = input("Choose 1–5: ").strip()
+            if player_choice not in ("1", "2", "3", "4", "5"):
+                raise ValueError("Invalid option. Please choose 1–5.")
+
         except ValueError as error:
             print(f"⚠️ {error}")
             continue
 
-        # ✅ Game choices
+        # === Game Options ===
         if player_choice == "1":
             print("🎭 Starting Mad Libs...")
             start_mad_libs()
             score_data["mad_libs"] += 1
 
         elif player_choice == "2":
-            print("🔠 Starting Hangman...")
+            print("🪓 Starting Hangman...")
             start_hangman()
             score_data["hangman"] += 1
 
@@ -52,19 +45,28 @@ def play_games():
             start_trivia()
             score_data["trivia"] += 1
 
+        # === Reset Stats Option ===
         elif player_choice == "4":
+            confirm = input("Are you sure you want to reset all stats? (y/n): ").lower().strip()
+            if confirm == "y":
+                score_data = reset_score()
+                print("✅ Stats reset successfully!")
+            else:
+                print("❌ Reset cancelled.")
+            continue
+
+        # === Exit Option ===
+        elif player_choice == "5":
             print("👋 Goodbye! Thanks for playing.")
             break
 
-        # ✅ Replay logic
+        # === Update persistent data after each round ===
+        score_data["total_sessions"] += 1
+        save_score(score_data)
+
+        # === Replay logic ===
         play_again = input("\nPlay again? (y/n): ").lower().strip()
         if play_again != "y":
-            print("Thanks for playing! Goodbye!")
-
-            # ✅ Update persistent data before exiting
-            score_data["total_sessions"] += 1
-            save_score(score_data)
-
             print("\n=== Final Session Score ===")
             print(
                 f"Mad Libs: {score_data['mad_libs']} | "
@@ -74,9 +76,11 @@ def play_games():
             )
             break
 
-
 if __name__ == "__main__":
-    play_games()
+    try:
+        play_games()
+    except KeyboardInterrupt:
+        print("\nSession ended by user. Saving progress...")
 
 
 
