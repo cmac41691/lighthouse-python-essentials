@@ -4,13 +4,32 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-### 2025-11-16 — Started Lesson 5 (Loops & Repetition)
+### 2025-11-16 – Started Lesson 5 (Loops & Repetition)
 
 **Setup**
 - Created new directory: `chapter5/`
 - Added files for each section (intro_to_looping.py, making_new_data.py, iterating_over_range.py, exercise_actors.py, strings_as_lists.py)
 - Beginning Looping & Iterating chapter — same workflow: pseudocode → Python → test → commit.
-- Completed Challenge #5 (Extract Vowels)
+- Completed challenge #5 (Extract Vowels)
+
+### ✔ Completed Lesson 5 (Loops & Repetition)
+
+**Completed Exercises**
+- `intro_to_looping.py`
+- `making_new_data.py`
+- `iterating_over_range.py`
+- `exercise_actors.py`
+- `string_as_lists.py`
+
+**Completed Challenges**
+- countdown
+- sum up to n
+- count even numbers
+- count character in string
+- extract vowels
+- reverse string
+
+---
 
 
 ---
@@ -22,7 +41,7 @@ This file documents my progress through the **Programming Essentials with Python
 - [✅] Lesson 2: Working with Variables  
 - [✅] Lesson 3: Strings and Input  
 - [✅] Lesson 4: Decisions and Conditions  
-- [ ] Lesson 5: Loops and Repetition  
+- [✅ ] Lesson 5: Loops and Repetition  
 - [ ] Lesson 6: Functions and Reuse  
 - [ ] Final Project: Word Game
 
