@@ -4,13 +4,19 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-### 2025-11-16 – Started Lesson 5 (Loops & Repetition)
+## 2025-12-06 – Started Lesson 6 (Functions & Reuse)
 
-**Setup**
-- Created new directory: `chapter5/`
-- Added files for each section (intro_to_looping.py, making_new_data.py, iterating_over_range.py, exercise_actors.py, strings_as_lists.py)
-- Beginning Looping & Iterating chapter — same workflow: pseudocode → Python → test → commit.
-- Completed challenge #5 (Extract Vowels)
+Setup
+
+Created new directory: chapter6/
+
+Added starter files for:
+
+introduction_to_functions.py
+defining_and_calling.py
+parameters_and_return_values.py
+exercise_functions.py
+Continuing workflow: pseudocode → Python → test → commit.
 
 ### ✔ Completed Lesson 5 (Loops & Repetition)
 
