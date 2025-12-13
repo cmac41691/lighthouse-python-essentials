@@ -4,19 +4,31 @@ This file documents my progress through the **Programming Essentials with Python
 
 ---
 
-## 2025-12-06 – Started Lesson 6 (Functions & Reuse)
+### ✔ Completed Lesson 6 — Functions & Reuse
+**Date:** 2025-12-??  
 
-Setup
+**Completed Exercises**  
+- `introduction_to_functions.py` — simple_function  
+- `defining_and_calling.py` — say_hello(), greet_user()  
+- `parameters_and_return_values.py` — add_number(), calculate_area()  
+- `exercise_functions.py` — celsius_to_fahrenheit(), is_even(), repeat_text()  
 
-Created new directory: chapter6/
+**Skills Learned**  
+- Defining and calling functions  
+- Using parameters  
+- Returning values from functions  
+- Writing modular, reusable code  
+- Using pseudocode to structure logic  
+- Understanding input, output, and flow  
+- Using docstrings to improve readability  
+- Testing individual functions  
+- Strengthening backend fundamentals  
 
-Added starter files for:
+**Reflection**  
+This chapter helped solidify my understanding of functions and how they structure programs.  
+Pseudocode made each exercise easier to break down, and I can see my logic improving with every file.  
+Completing Lesson 6 prepares me for the final Word Game work and the upcoming Interlude repo before starting Meta Backend.
 
-introduction_to_functions.py
-defining_and_calling.py
-parameters_and_return_values.py
-exercise_functions.py
-Continuing workflow: pseudocode → Python → test → commit.
 
 ### ✔ Completed Lesson 5 (Loops & Repetition)
 
@@ -47,8 +59,8 @@ Continuing workflow: pseudocode → Python → test → commit.
 - [✅] Lesson 2: Working with Variables  
 - [✅] Lesson 3: Strings and Input  
 - [✅] Lesson 4: Decisions and Conditions  
-- [✅ ] Lesson 5: Loops and Repetition  
-- [ ] Lesson 6: Functions and Reuse  
+- [✅] Lesson 5: Loops and Repetition  
+- [✅] Lesson 6: Functions and Reuse  
 - [ ] Final Project: Word Game
 
 ---
@@ -94,3 +106,4 @@ Optional polish: color output or difficulty selector (easy/medium/hard)
 AI helps me reason faster, not skip the work.  
 Each project documents real self-taught progress.
 
+Continuing workflow: pseudocode → Python → test → commit.
