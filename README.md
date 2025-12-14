@@ -1,140 +1,129 @@
-# Lighthouse Python Essentials
+# 🐍 Lighthouse Python Essentials — Learning Journey & Projects
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20With-Python%203.13-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Student-Lighthouse%20Labs-orange">
+  <img src="https://img.shields.io/badge/Status-In%20Progress-success">
 </p>
 
-
-
-Welcome to my solutions and notes from the **Programming Essentials with Python** course by [Lighthouse Labs](https://free-courses.lighthouselabs.ca/courses/programming-essentials-with-python).
+Welcome to my repository documenting my progress through **Programming Essentials with Python** by Lighthouse Labs.  
+This repo contains my daily exercises, pseudocode practice, and multi-file projects — all structured the way I think and work as a self-taught backend developer.
+---
 
 ## 📚 About the Course
-This free, beginner-friendly course teaches Python fundamentals through interactive lessons and small, hands-on challenges.
+This free, hands-on course builds Python fundamentals from the ground up.  
+My workflow throughout the course:
 
-## 🚀 What I Learned
-- Variables, data types, and string manipulation  
-- Conditional logic and loops  
-- Functions and return values  
-- Lists and basic data structures  
-- Error handling and debugging  
-- Building a mini-project from scratch  
+> **Pseudocode → Python → Test → Refine → Commit**
 
-## 🧠 Goals for This Repo
-- Reinforce Python fundamentals  
-- Practice clean and readable code  
-- Track my progression as a self-taught developer
+This approach strengthens my ability to write clean, modular code with intention — not guesswork.
+---
 
-## 📁 Structure
-/lighthouse-python-essentials
-├── lessons/ # Completed exercises and notes
-├── projects/ # Final projects or challenges
-├── README.md
-└── .gitignore
+## 🧠 What I've Learned
+- Variables, expressions, and data types  
+- Strings and user input  
+- Conditional logic & branching  
+- Looping patterns (for/while)  
+- Functions, parameters, return values  
+- Modular programming  
+- Error handling & defensive input validation  
+- JSON persistence and basic state management  
+- Writing maintainable, multi-file Python programs
+---
 
-
-## ✍️ Author
-**Coady MacLellan** — _aspiring developer & lifelong learner_
+## 🗂 Repository Structure
+```plaintext
+lighthouse-python-essentials/
+│
+├── chapter5/                  # Looping, iteration, small challenges
+├── chapter6/                  # Functions, modularization
+│
+└── projects/
+    └── word_game/             # Final multi-file project
+        ├── mad_libs.py
+        ├── hangman.py
+        ├── trivia.py
+        ├── navigator.py       # Modular game selection menu
+        ├── storage.py         # JSON persistence + reset system
+        ├── word_game.py       # Main hub controller
+        └── score_data.json    # Auto-generated save file
 
 ---
-## 🎮 Projects — Word Game Hub (Phase 1)
-This mini-project brings together multiple text-based games — **Mad Libs** and **Hangman** — into one Python-powered hub.  
-It’s the capstone for the course’s “Functions” and “Error Handling” lessons.
 
-### 🧩 Key Features
-- **Error Handling:** Prevents crashes with `try/except ValueError`  
-- **Session Scoring:** Tracks how many games you play per session  
-- **Replay System:** Lets players continue or exit gracefully  
-- **Modular Design:** Each game lives in its own Python file (`mad_libs.py`, `hangman.py`)  
-- **Stable Runtime:** Tested for invalid inputs and stable control flow 
+# ✅ **SECTION 5 — Featured Project (Word Game Hub)**
 
-### ⚙️ How to Run
+```markdown
+---
+
+# 🎮 **Featured Project — Word Game Hub**
+
+The Word Game Hub is the capstone project for this course, expanded far beyond its original scope into a **fully modular, scalable Python application**.
+### 🔧 Core Features
+- **Navigator menu** from a dedicated module (`navigator.py`)
+- **Pause system** for clean UX between rounds
+- **Three games**: Mad Libs, Hangman, Trivia  
+- **Persistent JSON save file** tracks:
+  - Mad Libs plays  
+  - Hangman plays  
+  - Trivia plays  
+  - Total sessions  
+- **Reset feature** with confirmation  
+- **Error handling** to prevent invalid input crashes  
+- **Graceful shutdown** with `KeyboardInterrupt` support  
+---
+
+### 💾 Persistence System
+Implemented using `storage.py`:
+- `load_or_create_score()`  
+- `save_score()`  
+- `reset_score()`  
+
+This is my first step into **stateful backend-style programming**.
+---
+
+### ▶️ How to Run
 ```bash
 cd projects/word_game
 python word_game.py
 
-## 📁 Project Layout
-projects/
-└── word_game/
-    ├── mad_libs.py        # Start function for Mad Libs
-    ├── hangman.py         # Start function for Hangman
-    ├── trivia.py          # Trivia mini-game (Phase 2)
-    ├── storage.py         # Persistent save/load system
-    ├── word_game.py       # Main game hub (menu, error handling, score)
-    └── README.md
+---
+
 
 
 ---
 
-### 🧩 **Section 5 — Update Log (Phases 2–4)**
-```markdown
-## 🧾 Update Log
+## 🧾 Update Log (Phases 1–6)
 
-### 🕹 2025-11-08 — Phase 2 (Trivia Integration)
-- Added `trivia.py` mini-game module  
-- Linked into hub menu under option (3)  
-- Verified stable gameplay and replay logic  
+### **Phase 2 — Trivia Game Added**
+- Created `trivia.py`
+- Integrated into menu & scoring system
 
-### 💾 Phase 4 — Persistent Score System
-The Word Game Hub now includes a **JSON-based persistence layer** to save player stats between sessions.
+### **Phase 4 — JSON Save System**
+- Introduced persistent score tracking  
+- Added session scoreboard  
+- Stress-tested repeated writes
 
-#### 🧠 Features
-- Automatically loads or creates `score_data.json` on startup  
-- Tracks cumulative progress for  
-  - `mad_libs`, `hangman`, `trivia`, `total_sessions`  
-- Saves updated results after each session  
-- Displays live scoreboard after every exit or replay cycle  
+### **Phase 5 — Reset System**
+- Added `reset_score()`  
+- Safe confirmation prompt  
+- Improved file generation logic  
 
-#### ⚙️ Technical Summary
-| File | Purpose |
-|------|----------|
-| `storage.py` | Handles JSON read/write functions |
-| `word_game.py` | Central hub that calls save/load logic |
-| `score_data.json` | Stores persistent player data |
+### **Phase 6 — Major Refactor (2025-12-14)**
+feat(word_game): integrate navigator menu and pause system
+feat(navigator): add modular game selection interface
+refactor(storage): finalize score loading, saving, and reset logic
 
-#### 🧩 Example Output
-📊 Current Stats → Total Sessions: 3
-🎭 Starting Mad Libs…
-Game Over!
-Your Score: 3/3
+**Highlights**
+- Fully modular navigator interface  
+- Smooth UX with pause system  
+- Cleaned main game loop  
+- Storage system validated end-to-end  
 
-=== Final Session Score ===
-Mad Libs: 4 | Hangman: 2 | Trivia: 3 | Total Sessions: 3
-
-✅ Status: Phase 4 completed successfully — persistent storage verified under stress testing.
-
-## 🧩 Phase 5 — Persistent Save + Reset Integration (2025-11-30)
-### Summary
-Phase 5 added a robust **reset-stats feature** and improved JSON save persistence, letting players wipe their progress safely without breaking gameplay.
-
-### Highlights
-- New menu option **“Reset Stats (Option 4)”**  
-- Added `reset_score()` helper in `storage.py`  
-- Confirmation prompt to prevent accidental wipes  
-- Auto-save updates after reset or session end  
-- Updated `.gitignore` to exclude `score_data.json`  
-- JSON save file verified under stress conditions  
-
-### Example
-Would you like to reset your stats? (y/n): y
-✅ Stats have been reset successfully!
-
-✅ Phase 5 complete — system is now fully persistent and player-friendly.
-
-
-## 🌱 Next Phase (Phase 6 Preview)
-**Focus:** UI/UX polish and error-handling refinement  
-**Goals:**  
-- Improve print formatting and colorized output  
-- Add return-to-menu option after each game  
-- Replace generic exceptions with specific handlers  
-- Optional ASCII banner for Word Game Hub title  
-
+**Result**  
+> The Word Game Hub now behaves like a real application — modular, maintainable, and easy to extend.
 ---
 
-## 📌 Notes
-This repo will continue to evolve as I complete future phases and transition toward the Meta Backend Developer certification.  
-Stay tuned for Phase 6 — UI Refactor and Testing phase!
+# ✍️ Author
+**Coady MacLellan**  
+Self-taught developer • Backend-focused thinker • Lifelong learner  
 
----
- 
-
+This repo represents my disciplined workflow, commitment to clean coding habits, and steady growth toward becoming a professional backend developer.
